@@ -1,0 +1,7 @@
+{
+  "name": "FileRougeMobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
