@@ -1,0 +1,16 @@
+<ion-card>
+    <!--<div class="card-Title">First Image</div>-->
+    <div class="d-flex flex-row justify-between">
+        <!--<ion-button color="success">+</ion-button>-->
+        <div *ngIf="allprods.my_type_is=='burger'">
+            <ion-button type="button" class="btn btn-warning" [routerLink]="[ '/detail',allprods.id] ">+</ion-button>
+        </div>
+        <div *ngIf="allprods.my_type_is=='menu'">
+            <ion-button type="button" class="btn btn-warning" [routerLink]="[ '/detail',allprods.id] ">Detail</ion-button>
+        </div>
+
+
+    </div>
+    <img [src]="transform(allprods.image)" alt="Produit">
+    <!--div class="card-subtitle">Subtitle of the First Image</div>-->
+</ion-card>

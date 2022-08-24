@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+  slideOpts = {
+    initialSlide: 0,
+  };
+
+
 }

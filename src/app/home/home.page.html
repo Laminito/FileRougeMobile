@@ -1,20 +1,112 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" scroll="false">
+    <ion-slides pager style="padding-bottom: 323px" [options]="slideOpts">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+        <ion-slide>
+            <ion-header [translucent]="true">
+                <ion-toolbar>
+                    <ion-title>
+                        Bienvenue Chez
+                    </ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-text>
+                <h1>Bienvenue Chez</h1>
+                <div class="round">
+                    <img src="https://scontent.fdkr5-1.fna.fbcdn.net/v/t1.6435-9/160295433_245105660628212_8380623119822814402_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeEFbQekDpFC-1xlrmhe-MxVH4rvI0K2B8Ufiu8jQrYHxV0j74gcRANgbDb5yciib0ezbvUrzekYVf9fCjjUs7yz&_nc_ohc=1bSmRy-8mgIAX9EanlP&tn=YaW4mh2EEE26UWqe&_nc_ht=scontent.fdkr5-1.fna&oh=00_AT_aRKvjAi_7jv-kaWMi4rWQ64jcEL87343Pdci3nzVm5g&oe=632C6908"
+                        alt="test">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+                </div>
+                <small>Veuillez vous connectez pour accedez à votre compte</small>
+                <div class="actions">
+                    <div class="login-buttons">
+                        <ion-button>
+                            <ion-avatar>
+                                <img src="../../assets/img/facebook.png" alt="">
+                            </ion-avatar>
+                            <ion-label>
+                                Facebook
+                            </ion-label>
+                        </ion-button>
+
+                        <ion-button>
+                            <ion-avatar>
+                                <img src="../../assets/img/google.png" alt="">
+                            </ion-avatar>
+                            <ion-label>
+                                Google
+                            </ion-label>
+                        </ion-button>
+                    </div>
+                    <div class="separator">
+                        <span>OU</span>
+                        <span classe="line left"></span>
+                        <span classe="line right"></span>
+                    </div>
+                    <!--<ion-button class="singnup-btn" expand="block">Se connecter avec son email</ion-button>
+                    <p class="login">Utilisateur existant? <a href="#">Se connecter maintenant</a> </p>
+                    -->
+                </div>
+            </ion-text>
+        </ion-slide>
+
+
+
+
+
+        <!-- <ion-tabs>
+        <ion-tab-bar slot="bottom" color="dark">
+            <ion-tab-button tab="feed">
+                <ion-icon name="paper"></ion-icon>
+                <ion-label>Feed</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="messages">
+                <ion-icon name="send"></ion-icon>
+                <ion-label>Messages</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="notifications">
+                <ion-icon name="notifications"></ion-icon>
+                <ion-label>Contact</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="settings">
+                <ion-icon name="cog"></ion-icon>
+                <ion-label>Settings</ion-label>
+            </ion-tab-button>
+
+        </ion-tab-bar>
+    </ion-tabs>-->
+
+
+        <ion-slide class="log">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons slot="start">
+                        <ion-back-button></ion-back-button>
+                    </ion-buttons>
+                    <ion-title>Log In</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <form>
+                <ion-item lines="full">
+                    <ion-label position="floating">Email</ion-label>
+                    <ion-input type="text" required></ion-input>
+                </ion-item>
+                <ion-item lines="full">
+                    <ion-label position="floating">Password</ion-label>
+                    <ion-input type="password" required></ion-input>
+                </ion-item>
+                <ion-row>
+                    <ion-col>
+                        <ion-button type="submit" color="danger" expand="block" class="but" [routerLink]="[ '/catalogue']">Sign In</ion-button>
+                        <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
+                    </ion-col>
+                </ion-row>
+            </form>
+
+        </ion-slide>
+    </ion-slides>
+
 </ion-content>
